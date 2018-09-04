@@ -1,0 +1,17 @@
+var mysql = require('mysql');
+const Sequelize = require('sequelize');
+
+const sequelize = new Sequelize('dbname', 'root', 'root', {
+  host: 'localhost',
+  dialect: 'mysql',
+  operatorsAliases: false,
+});
+const DataTypes = sequelize.DataTypes;
+
+const getInstance =  function(){   
+    return sequelize;
+}
+module.exports = {
+    getInstance
+   
+}
