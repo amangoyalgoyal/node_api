@@ -18,7 +18,7 @@ var form = new FormData();
 const DataTypes = sequelize.DataTypes;
 
 //get the instance of model to perform operations on it
-var customers  = require('../model/customers')(sequelize, DataTypes);
+var customers  = require('../models/customers')(sequelize, DataTypes);
 
 
 /*

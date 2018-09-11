@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const DataTypes = sequelize.DataTypes;
 
 //get the instance of model to perform operations on it
-var customers  = require('../model/customers')(sequelize, DataTypes);
+var customers  = require('../models/customers')(sequelize, DataTypes);
 
 /*
 *@defination : function user to fetch all records from table
